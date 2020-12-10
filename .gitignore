@@ -298,3 +298,4 @@ dmypy.json
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,pycharm,vscode,linux
+.idea
