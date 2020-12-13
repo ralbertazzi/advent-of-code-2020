@@ -45,7 +45,9 @@ def part2():
     for i, line in enumerate(lines):
         if line[:3] in ["nop", "jmp"]:
             modified_lines = copy(lines)
-            modified_lines[i] = modified_lines[i].replace("nop", "jmp").replace("jmp", "nop")
+            modified_lines[i] = (
+                modified_lines[i].replace("nop", "jmp").replace("jmp", "nop")
+            )
             terminated, acc = run(modified_lines)
             if terminated:
                 print(acc)
