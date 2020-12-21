@@ -8,6 +8,7 @@ authors = ["Riccardo Albertazzi <piano.vergato@gmail.com>, Luca De Luigi <lucade
 python = "^3.9"
 isort = "^5.6.4"
 tqdm = "^4.54.1"
+numpy = "^1.19.4"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"
