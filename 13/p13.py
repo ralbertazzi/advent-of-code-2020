@@ -6,8 +6,7 @@ def part1():
     earliest_timestamp = int(data[0])
     bus_ids = [int(bid) for bid in data[1].split(",") if bid != "x"]
     time_to_wait = [
-        (bus_id, (bus_id - earliest_timestamp % bus_id) % bus_id)
-        for bus_id in bus_ids
+        (bus_id, (bus_id - earliest_timestamp % bus_id) % bus_id) for bus_id in bus_ids
     ]
 
     min_value = min(time_to_wait, key=lambda t: t[1])
@@ -25,7 +24,9 @@ b = a + k
 
 
 def part2():
-    bus_ids = [(idx, int(bid)) for idx, bid in enumerate(data[1].split(",")) if bid != "x"]
+    bus_ids = [
+        (idx, int(bid)) for idx, bid in enumerate(data[1].split(",")) if bid != "x"
+    ]
     print(", ".join(f"(t + {idx}) mod {bus_id} = 0" for idx, bus_id in bus_ids))
     # Go to wolframalpha :)
 

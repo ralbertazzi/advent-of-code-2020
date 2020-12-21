@@ -39,7 +39,9 @@ def right(pos: tuple[int, int], degrees: int) -> tuple[int, int]:
     return rotate(pos, -degrees)
 
 
-def forward(ship: tuple[int, int], waypoint: tuple[int, int], n: int) -> tuple[int, int]:
+def forward(
+    ship: tuple[int, int], waypoint: tuple[int, int], n: int
+) -> tuple[int, int]:
     return ship[0] + n * waypoint[0], ship[1] + n * waypoint[1]
 
 
