@@ -29,7 +29,9 @@ def solve(rule: int) -> set[str]:
                 if len(suboptions_values) == 1:
                     values.update(suboptions_values[0])
                 else:
-                    values.update("".join(chunks) for chunks in product(*suboptions_values))
+                    values.update(
+                        "".join(chunks) for chunks in product(*suboptions_values)
+                    )
             rules[rule] = values
         # print(rule)
 

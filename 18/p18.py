@@ -1,7 +1,16 @@
 from functools import reduce
 from typing import Union, cast
 
-from pyparsing import Forward, Group, ParserElement, Suppress, Word, ZeroOrMore, nums, oneOf
+from pyparsing import (
+    Forward,
+    Group,
+    ParserElement,
+    Suppress,
+    Word,
+    ZeroOrMore,
+    nums,
+    oneOf,
+)
 
 
 def grammar() -> ParserElement:
